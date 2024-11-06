@@ -9,7 +9,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class XRTurretInteraction : XRBaseInteractable
 {
-    public Transform turretReset;
+    private Vector3 turretReset;
     public Transform turretBase;
     public Transform turretHorizontal;
     public Transform turretVertical;
@@ -25,7 +25,7 @@ public class XRTurretInteraction : XRBaseInteractable
 
     void Start()
     {
-        turretReset.position = transform.position;
+        turretReset = transform.position;
         ResetTurret();
     }
 
@@ -57,7 +57,7 @@ public class XRTurretInteraction : XRBaseInteractable
 
     void ResetTurret()
     {
-        transform.position = turretReset.position;
+        transform.position = turretReset;
         turretHorizontal.localRotation = Quaternion.identity;
         turretVertical.localRotation = Quaternion.identity;
     }
@@ -77,7 +77,7 @@ public class XRTurretInteraction : XRBaseInteractable
         Vector3 controllerPosition = _mSelectInteractor.transform.position;
 
         // 计算水平方向角度
-        float scaleHorizontal = 1.5f;
+        float scaleHorizontal = 1f;
         Vector3 horizontalDirection = turretBase.position - controllerPosition;
         horizontalDirection.y = 0;
         float horizontalAngle = Vector3.SignedAngle(turretBase.forward, horizontalDirection, turretBase.up);

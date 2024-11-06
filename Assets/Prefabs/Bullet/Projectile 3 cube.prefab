@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4573363424757953366}
   - component: {fileID: 1450645714477276774}
   - component: {fileID: 7774439260255435256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4920,7 +4920,7 @@ GameObject:
   - component: {fileID: 8493879308627996764}
   - component: {fileID: 1652331701205739640}
   - component: {fileID: 8249129345197770860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9820,7 +9820,7 @@ GameObject:
   - component: {fileID: 9106698611685276726}
   - component: {fileID: 8369321591018950253}
   - component: {fileID: 1068733402593984574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14671,7 +14671,7 @@ GameObject:
   - component: {fileID: 7997924529788868388}
   - component: {fileID: 6278683963009941569}
   - component: {fileID: 8425013398149565250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Triangles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19523,7 +19523,7 @@ GameObject:
   - component: {fileID: 6583404552323706597}
   - component: {fileID: 2697971860916838054}
   - component: {fileID: 6020970051582870094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24424,7 +24424,7 @@ GameObject:
   - component: {fileID: 6208652924187107049}
   - component: {fileID: 4592482360955957814}
   - component: {fileID: 590620911073288943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flash 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29349,7 +29349,7 @@ GameObject:
   - component: {fileID: 2098560564748391664}
   - component: {fileID: 4446508468307566051}
   - component: {fileID: 5903819430902384039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34259,7 +34259,7 @@ GameObject:
   - component: {fileID: 8425643664411362340}
   - component: {fileID: 8824760374319551233}
   - component: {fileID: 1154755361453135458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39171,7 +39171,7 @@ GameObject:
   - component: {fileID: 2008140012496609593}
   - component: {fileID: 1789419488766209412}
   - component: {fileID: 4566927327925485769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile 3 cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39188,7 +39188,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.356, z: -0.902}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 378000339675866792}
@@ -39206,7 +39206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605a456cfc02f6b499a64717539a27e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 15
   hitOffset: 0.05
   UseFirePointRotation: 0
   rotationOffset: {x: 0, y: 0, z: 0}
@@ -39364,7 +39364,7 @@ GameObject:
   - component: {fileID: 603357378173565764}
   - component: {fileID: 3348616932038340857}
   - component: {fileID: 6294334569939978501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44264,7 +44264,7 @@ GameObject:
   - component: {fileID: 383218172121854465}
   - component: {fileID: 5378146659181799284}
   - component: {fileID: 6635092528305924153}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hit 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49177,7 +49177,7 @@ GameObject:
   - component: {fileID: 2449978762542612080}
   - component: {fileID: 2922624860849302186}
   - component: {fileID: 2311153617283866228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54077,7 +54077,7 @@ GameObject:
   - component: {fileID: 2102723960494373734}
   - component: {fileID: 8536080297135396528}
   - component: {fileID: 3617913787550680896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58977,7 +58977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 378000339675866792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

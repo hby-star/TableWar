@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 991863048533539759}
   - component: {fileID: 460851746004832975}
   - component: {fileID: 3827349840581828457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile 2 energy orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8036561878922308797}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605a456cfc02f6b499a64717539a27e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   hitOffset: 0.01
   UseFirePointRotation: 0
   rotationOffset: {x: 0, y: 0, z: 0}
@@ -170,8 +170,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.3391171
+  m_Center: {x: 0, y: 0, z: 0.0067860633}
 --- !u!114 &3827349840581828457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 6883028758858909881}
   - component: {fileID: 5718528819607744434}
   - component: {fileID: 2778069224818605013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5109,7 +5109,7 @@ GameObject:
   - component: {fileID: 4541953484694400597}
   - component: {fileID: 2407718043091909056}
   - component: {fileID: 5200242027663068100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShoclWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10009,7 +10009,7 @@ GameObject:
   - component: {fileID: 7195881230987330734}
   - component: {fileID: 1077142454804126133}
   - component: {fileID: 860554467574840222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hit 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14913,7 +14913,7 @@ GameObject:
   - component: {fileID: 4562753421570141334}
   - component: {fileID: 8391758602911424141}
   - component: {fileID: 5323606850838074319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19813,7 +19813,7 @@ GameObject:
   - component: {fileID: 7142011067541472732}
   - component: {fileID: 3374205451499611133}
   - component: {fileID: 1759034384445929351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Darkness
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24713,7 +24713,7 @@ GameObject:
   - component: {fileID: 7317992662028400851}
   - component: {fileID: 550380259263830976}
   - component: {fileID: 1444628569356775669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29622,7 +29622,7 @@ GameObject:
   - component: {fileID: 9042675614054642514}
   - component: {fileID: 5643415188753874923}
   - component: {fileID: 4650148738278560771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BorderLightning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34464,7 +34464,7 @@ GameObject:
   - component: {fileID: 4444318988604512330}
   - component: {fileID: 3009118120652369336}
   - component: {fileID: 753098718787328903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShoclWaveDark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39364,7 +39364,7 @@ GameObject:
   - component: {fileID: 1613876834396949994}
   - component: {fileID: 6130830858846766580}
   - component: {fileID: 4966635569072772310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44264,7 +44264,7 @@ GameObject:
   - component: {fileID: 9143216206394229770}
   - component: {fileID: 334334780077812550}
   - component: {fileID: 7874884854028887802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49183,7 +49183,7 @@ GameObject:
   - component: {fileID: 900032280322923559}
   - component: {fileID: 5027643660282802362}
   - component: {fileID: 2058004945005125189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flash 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54104,7 +54104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8036561878922308797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
