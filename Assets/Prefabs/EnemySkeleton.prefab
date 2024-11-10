@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 1473016355644865259}
   - component: {fileID: 2280126849315659760}
   - component: {fileID: 5771175861859983149}
+  - component: {fileID: 8813704120073341018}
   m_Layer: 7
   m_Name: EnemySkeleton
   m_TagString: Untagged
@@ -207,10 +208,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50160044
-  m_Height: 1.3553228
+  m_Radius: 0.49895182
+  m_Height: 1.4784833
   m_Direction: 1
-  m_Center: {x: -4.0346614e-17, y: 0.8177657, z: 0.04000709}
+  m_Center: {x: 8.208742e-19, y: 0.7561855, z: -0.0023703536}
 --- !u!54 &5771175861859983149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -238,6 +239,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!195 &8813704120073341018
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615458233985113697}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1938676805620216507
 GameObject:
   m_ObjectHideFlags: 0
