@@ -2443,7 +2443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f8472d1a75a914abfae28a8b27b82c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
+  enemyPrefabs:
   - {fileID: 1615458233985113697, guid: 8d9580c579abbd24984d242b93823b80, type: 3}
   - {fileID: 1253579348922638919, guid: e02b0ae4f2240c84d9126094f62e7eba, type: 3}
 --- !u!1 &329674977
@@ -7336,6 +7336,7 @@ Transform:
   - {fileID: 941582946}
   - {fileID: 1307655360}
   - {fileID: 1508036975}
+  - {fileID: 232490684}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &821442657
@@ -9459,7 +9460,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 817075156}
     m_Modifications:
     - target: {fileID: 4683062103311359632, guid: 31521c72e48cd614b8345d4efca04c11, type: 3}
       propertyPath: m_LocalScale.x
@@ -9491,11 +9492,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4683062103311359632, guid: 31521c72e48cd614b8345d4efca04c11, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4683062103311359632, guid: 31521c72e48cd614b8345d4efca04c11, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4683062103311359632, guid: 31521c72e48cd614b8345d4efca04c11, type: 3}
       propertyPath: m_LocalRotation.z
@@ -12101,6 +12102,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 977350132979673516, guid: 8d9580c579abbd24984d242b93823b80, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4924785180067815}
     - target: {fileID: 1615458233985113697, guid: 8d9580c579abbd24984d242b93823b80, type: 3}
       propertyPath: m_Name
       value: EnemySkeleton
@@ -39122,5 +39127,4 @@ SceneRoots:
   - {fileID: 1405771757}
   - {fileID: 519780586}
   - {fileID: 1062091441}
-  - {fileID: 1053157486}
   - {fileID: 1483250645}
