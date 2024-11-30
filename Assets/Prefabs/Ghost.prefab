@@ -45,11 +45,11 @@ GameObject:
   - component: {fileID: 1559527688483520999}
   - component: {fileID: 1375518820481235066}
   - component: {fileID: 5423082095232733566}
-  - component: {fileID: 8482468762749400732}
   - component: {fileID: 4695098961186577703}
+  - component: {fileID: 6742176668968493009}
   m_Layer: 7
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.4
-  m_Speed: 3.5
+  m_Speed: 0.3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -162,20 +162,8 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!114 &8482468762749400732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253579348922638919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c316e2c6c97c94e4f93d83f65136a55e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4695098961186577703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,6 +178,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
+  damage: 20
+--- !u!114 &6742176668968493009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253579348922638919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5405b863d2781640b8412ad83b781c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshAgent: {fileID: 0}
+  rb: {fileID: 0}
+  col: {fileID: 0}
+  anim: {fileID: 0}
+  stats: {fileID: 0}
+  interceptRange: 0.6
+  attackRange: 0.4
 --- !u!1 &1420862025516190077
 GameObject:
   m_ObjectHideFlags: 0
