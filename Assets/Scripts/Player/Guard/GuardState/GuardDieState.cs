@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using Unity.VRTemplate;
 using UnityEngine;
 
-public class EnemyDieState : EnemyState
+public class GuardDieState : GuardState
 {
-    public EnemyDieState(EntityStateMachine entityStateMachine, Enemy enemy, string animationName) : base(entityStateMachine, enemy, animationName)
+    public GuardDieState(EntityStateMachine entityStateMachine, Guard guard, string animationName) : base(entityStateMachine, guard, animationName)
     {
     }
 
     public override void Enter()
     {
         base.Enter();
-        enemy.rb.useGravity = false;
-        enemy.rb.velocity = Vector3.zero;
-        enemy.rb.angularVelocity = Vector3.zero;
-        enemy.col.enabled = false;
+
+        guard.rb.useGravity = false;
+        guard.rb.velocity = Vector3.zero;
+        guard.rb.angularVelocity = Vector3.zero;
+        guard.col.enabled = false;
     }
 
     public override void Exit()
@@ -29,8 +30,7 @@ public class EnemyDieState : EnemyState
 
         if (IsAnimationFinished())
         {
-            enemy.Die();
+            guard.Die();
         }
     }
-
 }

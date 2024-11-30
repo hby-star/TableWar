@@ -5,13 +5,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class Enemy : Entity
 {
-    [Header("Attack Info")] public int damage;
+    [Header("Attack Info")]
+    public float interceptRange;
     public float attackRange;
-    public Transform target;
-    public Transform attackPoint;
+    [NonSerialized] public Vector3 Target = Vector3.zero;
+    [NonSerialized] public Guard guard = null;
 
     public EntityStateMachine StateMachine;
     public EnemyIdleState IdleState;
@@ -29,6 +31,8 @@ public class Enemy : Entity
         RunState = new EnemyRunState(StateMachine, this, "Run");
         AttackState = new EnemyAttackState(StateMachine, this, "Attack");
         DieState = new EnemyDieState(StateMachine, this, "Die");
+
+        navMeshAgent.stoppingDistance = attackRange;
     }
 
     protected override void Start()
@@ -42,24 +46,32 @@ public class Enemy : Entity
     {
         base.Update();
 
-        if(Input.GetKeyDown(KeyCode.W))
-        {
-            StateMachine.ChangeState(RunState);
-        }
+        StateMachine.CurrentState.Update();
 
-        if(Input.GetKeyDown(KeyCode.S))
-        {
-            StateMachine.ChangeState(IdleState);
-        }
-
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            StateMachine.ChangeState(AttackState);
-        }
-
-        if(Input.GetKeyDown(KeyCode.D))
+        if(stats.currentHealth <= 0)
         {
             StateMachine.ChangeState(DieState);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, interceptRange);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
+
+    public void Die()
+    {
+        gameObject.SetActive(false);
+        Destroy(gameObject);
+    }
+
+    public void AnimationFinished()
+    {
+        StateMachine.CurrentState.AnimationFinished();
     }
 }

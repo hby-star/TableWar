@@ -21,5 +21,10 @@ public class EnemyIdleState : EnemyState
     public override void Update()
     {
         base.Update();
+
+        if (enemy.Target != Vector3.zero)
+        {
+            enemy.StateMachine.ChangeState(enemy.RunState);
+        }
     }
 }

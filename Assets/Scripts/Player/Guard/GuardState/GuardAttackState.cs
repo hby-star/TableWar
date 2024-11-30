@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttackState : EnemyState
+public class GuardAttackState : GuardState
 {
-    public EnemyAttackState(EntityStateMachine entityStateMachine, Enemy enemy, string animationName) : base(
-        entityStateMachine, enemy, animationName)
+    public GuardAttackState(EntityStateMachine entityStateMachine, Guard guard, string animationName) : base(
+        entityStateMachine, guard, animationName)
     {
     }
 
@@ -25,12 +25,12 @@ public class EnemyAttackState : EnemyState
 
         if (IsAnimationFinished())
         {
-            if (enemy.guard)
+            if (guard.attackTarget)
             {
-                enemy.guard.stats.TakeDamage(enemy.stats.damage);
+                guard.attackTarget.stats.TakeDamage(guard.stats.damage);
             }
 
-            enemy.StateMachine.ChangeState(enemy.RunState);
+            guard.StateMachine.ChangeState(guard.RunState);
         }
     }
 }

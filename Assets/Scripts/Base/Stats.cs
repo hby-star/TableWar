@@ -7,6 +7,7 @@ public class Stats : MonoBehaviour
 {
     public int maxHealth;
     public int currentHealth;
+    public int damage;
     public Action OnHealthChanged;
 
     void Start()
@@ -14,15 +15,15 @@ public class Stats : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int _damage)
     {
-        if(currentHealth - damage <= 0)
+        if(currentHealth - _damage <= 0)
         {
             currentHealth = 0;
         }
         else
         {
-            currentHealth -= damage;
+            currentHealth -= _damage;
         }
 
         OnHealthChanged?.Invoke();
