@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class EnemyManager : MonoBehaviour
 {
     public List<GameObject> enemyPrefabs;
+    public float spawnRate;
     public Vector3 spawnCenter;
     public Vector3 spawnArea;
 
@@ -40,7 +41,6 @@ public class EnemyManager : MonoBehaviour
     }
 
     float timer = 0;
-    float spawnRate = 2f;
     private void Update()
     {
         timer += Time.deltaTime;

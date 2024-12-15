@@ -8,6 +8,7 @@ TagManager:
   - Guard
   - Enemy
   - Bullet
+  - FinalZone
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Bullet
   - Enemy
   - Guard
-  - 
+  - FinalZone
   - 
   - 
   - 

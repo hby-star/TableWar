@@ -66,6 +66,7 @@ public class Enemy : Entity
 
     public void Die()
     {
+        GameManager.Instance.AddEnemyKilledCount();
         gameObject.SetActive(false);
         Destroy(gameObject);
     }
@@ -73,5 +74,15 @@ public class Enemy : Entity
     public void AnimationFinished()
     {
         StateMachine.CurrentState.AnimationFinished();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("FinalZone"))
+        {
+            GameManager.Instance.AddEnemyMissedCount();
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
     }
 }
