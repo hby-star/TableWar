@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         pauseButton.onClick.AddListener(PauseGame);
         resetButton.onClick.AddListener(ResetGame);
 
-        Time.timeScale = 1;
+        Time.timeScale = 0;
         enemyKilledCountText.text = enemyKilledCount.ToString();
         enemyMissedCountText.text = enemyMissedCount.ToString();
     }

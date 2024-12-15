@@ -17,7 +17,7 @@ MonoBehaviour:
   SkipPromptForVersion: 
   StereoRenderingMode: 1
   InitializationType: 1
-  EditorAppKey: application.generated.unity.picodemo.exe
-  ActionManifestFileRelativeFilePath: StreamingAssets\SteamVR\actions.json
+  EditorAppKey: application.generated.unity.tablewar.1210581376.exe
+  ActionManifestFileRelativeFilePath: 
   MirrorView: 2
   HasCopiedDefaults: 0

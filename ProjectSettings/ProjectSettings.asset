@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: HouBinyang
-  productName: Pico Demo
+  productName: TableWar
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -140,7 +140,9 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -6340949339239032922, guid: 34e7c156540ed2043957bbc221fd1983, type: 2}
+  - {fileID: -6568377941504305725, guid: c85d29bd1510c16439b0aba609766b54, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -162,7 +164,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.unity.template.vr
-    Standalone: com.Unity-Technologies.VR-Template
+    Standalone: HouBinyang
   buildNumber:
     Standalone: 0
     VisionOS: 0

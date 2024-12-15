@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -16,8 +14,8 @@ public class XRTurretInteraction : XRBaseInteractable
 
     public float maxHorizontalAngle = 45f;
     public float minHorizontalAngle = -45f;
-    public float maxVerticalAngle = 30f;
-    public float minVerticalAngle = -30f;
+    // public float maxVerticalAngle = 30f;
+    // public float minVerticalAngle = -30f;
 
     private IXRSelectInteractor _mSelectInteractor;
 
@@ -84,14 +82,6 @@ public class XRTurretInteraction : XRBaseInteractable
         float scaleHorizontalAngle = horizontalAngle * scaleHorizontal;
         horizontalAngle = Mathf.Clamp(scaleHorizontalAngle, minHorizontalAngle, maxHorizontalAngle);
         turretHorizontal.localRotation = Quaternion.Euler(0f, horizontalAngle, 0f);
-
-        // 计算垂直方向角度
-        // float scaleVertical = 0.2f;
-        // Vector3 verticalDirection = turretBase.position - controllerPosition;
-        // float verticalAngle = Vector3.SignedAngle(turretBase.forward, verticalDirection, -turretBase.right);
-        // float scaledVerticalAngle = verticalAngle * scaleVertical;
-        // verticalAngle = Mathf.Clamp(scaledVerticalAngle, minVerticalAngle, maxVerticalAngle);
-        // turretVertical.localRotation = Quaternion.Euler(-verticalAngle, 0f, 0f);
     }
 
     public GameObject bulletPrefab;
